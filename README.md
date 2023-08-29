@@ -12,8 +12,8 @@ Exposing the localhost network to the public network through a WebSocket tunnel.
 5. Perform the configuration.
    - `port-tunnel`: The port used for the connection between the server tunnel and the client tunnel.
    - `port-tcp`: The port used to receive TCP connections on the server side.
-   - `tcp-traffic-encryption`: Do you want to encrypt the flow of TCP data? "key" is the encryption key that will be used on the server tunnel and client.
-   - `tunnel-authentication`: Used for authentication to the client. The "token" value between the server and client must be the same.
+   - `tcp-traffic-encryption`: Do you want to encrypt the flow of TCP data? `"key"` is the encryption key that will be used on the server tunnel and client.
+   - `tunnel-authentication`: Used for authentication to the client. The `"token"` value between the server and client must be the same.
 6. After that, run: `node tunnel-server.js`
 
 Make sure to follow the above steps correctly to successfully install and run the server tunnel.
