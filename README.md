@@ -42,4 +42,3 @@ Make sure to follow the above steps correctly to successfully install and run th
 
 Note:
 - Ensure that you have installed Node.js and npm before running the `npm install` command.
-- 
