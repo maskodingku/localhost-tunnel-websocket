@@ -4,8 +4,8 @@ Exposing the localhost network to the public network through a WebSocket tunnel.
 This can be used to expose local networks such as SSH, RDP, web servers (HTTP), and other networks that use the TCP protocol.
 
 This script uses one of the following packages:
-- Socket.io
-- express
+- [Socket.io](https://www.npmjs.com/package/socket.io)
+- [express](https://www.npmjs.com/package/express)
 
 # How to Use:
 
