@@ -20,5 +20,3 @@ Make sure to follow the above steps correctly to successfully install and run th
 
 Note:
 - Ensure that you have installed Node.js and npm before running the `npm install` command.
-- Replace `[URL_REPOSITORY]` with the appropriate repository URL you are using.
-- Ensure that the `config.js` configuration matches your project's requirements before running the server tunnel.
