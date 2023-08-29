@@ -6,7 +6,7 @@ Exposing the localhost network to the public network through a WebSocket tunnel.
 ## A. Server Tunnel Installation:
 
 1. Clone the repository.
-2. CD into the server directory.
+2. CD into the `server` directory.
 3. Perform the installation: `npm install`
 4. Open the `config.js` file.
 5. Perform the configuration.
