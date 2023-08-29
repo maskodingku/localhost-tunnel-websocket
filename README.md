@@ -1,6 +1,8 @@
 # localhost-tunnel-websocket
 Exposing the localhost network to the public network through a WebSocket tunnel. TCP data exchange between the local server and the public server is routed through a WebSocket connection with additional AES 256 encryption.
 
+![Image](image.png)
+
 This can be used to expose local networks such as SSH, RDP, web servers (HTTP), and other networks that use the TCP protocol.
 
 This script uses one of the following packages:
