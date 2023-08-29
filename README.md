@@ -3,7 +3,7 @@ Exposing the localhost network to the public network through a WebSocket tunnel.
 
 # How to Use:
 
-## A. Server Tunnel Installation:
+## Server Tunnel Installation:
 
 1. Clone the repository.
 2. CD into the `server` directory.
