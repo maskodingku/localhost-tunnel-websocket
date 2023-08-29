@@ -1,14 +1,4 @@
-const config = {
-	"host-tunnel" : "123.123.123.123",
-	"port-tunnel" : 80,
-	"host-tcp" : "localhost",
-	"port-tcp" : 80,
-	"tcp-traffic-encryption-key":"pantek69",
-	"tunnel-authentication":{
-		"token":"asedekontil66"
-	}
-};
-
+import config from "./config.js";
 import net from "net";
 import { io } from "socket.io-client";
 import crypto from "crypto";
