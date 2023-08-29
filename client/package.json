@@ -1,0 +1,17 @@
+{
+  "name": "tunnel-client",
+  "version": "1.0.0",
+  "description": "Connects to the websocket tunnel server",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Abdi Syahputra Harahap",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "socket.io-client": "^4.7.2"
+  }
+}
