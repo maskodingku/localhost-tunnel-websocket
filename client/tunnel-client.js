@@ -20,20 +20,20 @@ socket.on("tcp-server-data",(obj)=>{
 			host: config["host-tcp"], 
 			port: config["port-tcp"]
 		}, () => {
-	  	console.log('Terhubung ke server!');
-	    const iv = data.slice(0, 16);
-	    const encryptedContent = data.slice(16);
-	    const decipher = crypto.createDecipheriv('aes-256-cbc', encryptionKey, iv);
-	    const decryptedData = Buffer.concat([decipher.update(encryptedContent), decipher.final()]);
-	  	channel_tcp[id].write(decryptedData);
+	  		console.log('Terhubung ke server!');
+	    		const iv = data.slice(0, 16);
+	    		const encryptedContent = data.slice(16);
+	    		const decipher = crypto.createDecipheriv('aes-256-cbc', encryptionKey, iv);
+	    		const decryptedData = Buffer.concat([decipher.update(encryptedContent), decipher.final()]);
+	  		channel_tcp[id].write(decryptedData);
 		}).on('data', (dataTcp) => {
 			const dataToEncrypt = Buffer.from(dataTcp);
-		  const iv = crypto.randomBytes(16);
-		  const cipher = crypto.createCipheriv('aes-256-cbc', encryptionKey, iv);
-		  const encryptedBuffer = Buffer.concat([iv, cipher.update(dataToEncrypt), cipher.final()]);
-		  socket.emit("tcp-client-data",id,encryptedBuffer);
+		  	const iv = crypto.randomBytes(16);
+		  	const cipher = crypto.createCipheriv('aes-256-cbc', encryptionKey, iv);
+		  	const encryptedBuffer = Buffer.concat([iv, cipher.update(dataToEncrypt), cipher.final()]);
+		  	socket.emit("tcp-client-data",id,encryptedBuffer);
 		}).on('end', () => {
-		  socket.emit("tcp-client-end",id);
+		  	socket.emit("tcp-client-end",id);
 		}).on('error', (err) => {
 			console.error('Kesalahan pada koneksi client:', err);
 			socket.emit("tcp-client-error",id,err);
@@ -41,11 +41,11 @@ socket.on("tcp-server-data",(obj)=>{
 			channel_tcp[id].destroy();
 		});
 	}else{
-    const iv = data.slice(0, 16);
-    const encryptedContent = data.slice(16);
-    const decipher = crypto.createDecipheriv('aes-256-cbc', encryptionKey, iv);
-    const decryptedData = Buffer.concat([decipher.update(encryptedContent), decipher.final()]);
-  	channel_tcp[id].write(decryptedData);
+    		const iv = data.slice(0, 16);
+    		const encryptedContent = data.slice(16);
+    		const decipher = crypto.createDecipheriv('aes-256-cbc', encryptionKey, iv);
+    		const decryptedData = Buffer.concat([decipher.update(encryptedContent), decipher.final()]);
+  		channel_tcp[id].write(decryptedData);
 	};
 });
 socket.on("connect", () => {
