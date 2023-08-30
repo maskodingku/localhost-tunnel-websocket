@@ -1,7 +1,4 @@
-
-
 const list_ID = {};
-
 export default {
 	"register" : (clientTcp)=>{
 		const cap = new Date().getTime();
