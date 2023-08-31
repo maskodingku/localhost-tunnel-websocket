@@ -3,7 +3,7 @@ export default {
 	"register" : (clientTcp)=>{
 		const cap = new Date().getTime();
 		list_ID[cap]=clientTcp;
-		console.log("Total Koneksi :",Object.keys(list_ID).length,Object.keys(list_ID))
+		console.log("Total Koneksi :",Object.keys(list_ID).length)
 		return cap;
 	},
 	"sendData" : (id,data)=>{
